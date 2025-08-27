@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun  4 02:19:32 2025
+# Process ID         : 56792
+# Current directory  : C:/Users/ivyre/Desktop/test/test.runs/synth_1
+# Command line       : vivado.exe -log glbl_ctrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source glbl_ctrl.tcl
+# Log file           : C:/Users/ivyre/Desktop/test/test.runs/synth_1/glbl_ctrl.vds
+# Journal file       : C:/Users/ivyre/Desktop/test/test.runs/synth_1\vivado.jou
+# Running On         : IVYLIB
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33835 MB
+# Swap memory        : 25796 MB
+# Total Virtual      : 59631 MB
+# Available Virtual  : 2578 MB
+#-----------------------------------------------------------
+source glbl_ctrl.tcl -notrace

@@ -1,0 +1,184 @@
+#define _CRT_SECURE_NO_WARNINGS // fopen 관련 경고를 무시하기 위해 추가 (MSVC)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h> // For uint16_t, uint64_t
+#include <errno.h>  // For errno
+
+// Helper function to strip newline characters from a string
+void strip_newline(char* str) {
+    if (str == NULL) return;
+    str[strcspn(str, "\r\n")] = 0;
+}
+
+// Parses a decimal string into a uint16_t.
+// Returns 1 on success, 0 on failure.
+int parse_dec_to_uint16(const char* dec_str, uint16_t* val) {
+    if (dec_str == NULL || val == NULL) {
+        return 0;
+    }
+    char* endptr;
+    errno = 0;
+    long lval = strtol(dec_str, &endptr, 10);
+
+    if (endptr == dec_str) {
+        // fprintf(stderr, "Debug: No digits found in '%s'\n", dec_str); // 디버그용
+        return 0;
+    }
+    char* temp_ptr = endptr;
+    while (*temp_ptr != '\0') {
+        if (*temp_ptr != ' ' && *temp_ptr != '\t' && *temp_ptr != '\n' && *temp_ptr != '\r') {
+            // fprintf(stderr, "Debug: Invalid character '%c' found after number in '%s'\n", *temp_ptr, dec_str); // 디버그용
+            return 0;
+        }
+        temp_ptr++;
+    }
+
+    if (errno == ERANGE || lval < 0 || lval > 0xFFFF) {
+        // fprintf(stderr, "Debug: Value '%s' (parsed as %ld) is out of range for uint16_t or conversion error (errno: %d).\n", dec_str, lval, errno); // 디버그용
+        return 0;
+    }
+
+    *val = (uint16_t)lval;
+    return 1;
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 5) {
+        fprintf(stderr, "Usage: %s <input_file> <output_file> <m> <W>\n", argv[0]);
+        fprintf(stderr, "  <input_file>: Path to the input text file (contains decimal integers, one per line).\n");
+        fprintf(stderr, "  <output_file>: Path to the output text file. Use '-' for stdout.\n");
+        fprintf(stderr, "  <m>: Number of 16-bit integers to group (must be > 0).\n");
+        fprintf(stderr, "  <W>: Target bit width for output hex integers (1 <= W <= 64, and (m*16) must be divisible by W).\n");
+        return 1;
+    }
+
+    const char* infile_name = argv[1];
+    const char* outfile_name = argv[2];
+    long m_long = strtol(argv[3], NULL, 10);
+    long w_long = strtol(argv[4], NULL, 10);
+
+    if (m_long <= 0) {
+        fprintf(stderr, "Error: m (number of lines to group) must be greater than 0.\n");
+        return 1;
+    }
+    if (w_long <= 0 || w_long > 64) {
+        fprintf(stderr, "Error: W (target bit width) must be between 1 and 64, inclusive.\n");
+        return 1;
+    }
+
+    int m_val = (int)m_long;
+    int w_val = (int)w_long;
+
+    if (((long long)m_val * 16) % w_val != 0) {
+        fprintf(stderr, "Error: Total bits in a group (m * 16 = %d) must be divisible by W (%d).\n", m_val * 16, w_val);
+        return 1;
+    }
+
+    FILE* infile_ptr = fopen(infile_name, "r"); // MSVC에서 fopen_s 사용을 권장할 수 있음
+    if (!infile_ptr) {
+        char err_buf[256];
+        strerror_s(err_buf, sizeof(err_buf), errno); // MSVC 호환 strerror_s
+        fprintf(stderr, "Error opening input file '%s': %s\n", infile_name, err_buf);
+        return 1;
+    }
+
+    FILE* outfile_ptr;
+    if (strcmp(outfile_name, "-") == 0) {
+        outfile_ptr = stdout;
+    }
+    else {
+        outfile_ptr = fopen(outfile_name, "w"); // MSVC에서 fopen_s 사용을 권장할 수 있음
+        if (!outfile_ptr) {
+            char err_buf[256];
+            strerror_s(err_buf, sizeof(err_buf), errno); // MSVC 호환 strerror_s
+            fprintf(stderr, "Error opening output file '%s': %s\n", outfile_name, err_buf);
+            fclose(infile_ptr);
+            return 1;
+        }
+    }
+
+    // void* 반환값을 명시적으로 형 변환
+    uint16_t* input_values = (uint16_t*)malloc(m_val * sizeof(uint16_t));
+    unsigned char* processing_buffer = (unsigned char*)malloc(m_val * 2 * sizeof(unsigned char));
+
+    if (!input_values || !processing_buffer) {
+        fprintf(stderr, "Error: Memory allocation failed.\n");
+        if (input_values) free(input_values);
+        if (processing_buffer) free(processing_buffer);
+        fclose(infile_ptr);
+        if (outfile_ptr != stdout) fclose(outfile_ptr);
+        return 1;
+    }
+
+    char line_buffer[256];
+    int lines_read_for_group = 0;
+    long total_lines_read = 0;
+    int group_count = 0;
+
+    while (fgets(line_buffer, sizeof(line_buffer), infile_ptr) != NULL) {
+        total_lines_read++;
+        strip_newline(line_buffer);
+
+        if (strlen(line_buffer) == 0) {
+            continue;
+        }
+
+        if (!parse_dec_to_uint16(line_buffer, &input_values[lines_read_for_group])) {
+            fprintf(stderr, "Error: Invalid decimal value or value out of 16-bit range ('%s') on input line %ld.\n", line_buffer, total_lines_read);
+            free(input_values);
+            free(processing_buffer);
+            fclose(infile_ptr);
+            if (outfile_ptr != stdout) fclose(outfile_ptr);
+            return 1;
+        }
+        lines_read_for_group++;
+
+        if (lines_read_for_group == m_val) {
+            group_count++;
+            for (int i = 0; i < m_val; ++i) {
+                processing_buffer[i * 2] = (input_values[i] >> 8) & 0xFF;
+                processing_buffer[i * 2 + 1] = input_values[i] & 0xFF;
+            }
+
+            int bits_in_processing_buffer = m_val * 16;
+            int num_output_chunks = bits_in_processing_buffer / w_val;
+            int current_bit_offset_in_buffer = 0;
+
+            for (int chunk_idx = 0; chunk_idx < num_output_chunks; ++chunk_idx) {
+                uint64_t w_bit_value = 0;
+                for (int bit_k = 0; bit_k < w_val; ++bit_k) {
+                    int global_bit_pos = current_bit_offset_in_buffer + bit_k;
+                    int byte_index = global_bit_pos / 8;
+                    int bit_in_byte = 7 - (global_bit_pos % 8);
+
+                    if ((processing_buffer[byte_index] >> bit_in_byte) & 1) {
+                        w_bit_value |= (1ULL << (w_val - 1 - bit_k));
+                    }
+                }
+                fprintf(outfile_ptr, "%0*llX\n", (w_val + 3) / 4, w_bit_value);
+                current_bit_offset_in_buffer += w_val;
+            }
+            lines_read_for_group = 0;
+        }
+    }
+
+    if (lines_read_for_group > 0) {
+        fprintf(stderr, "Warning: Input file has a partial group of %d line(s) at the end. Processed %ld total line(s) from input file into %d full group(s).\n",
+            lines_read_for_group, total_lines_read, group_count);
+        fprintf(stderr, "The last %d line(s) were not processed into a full group of %d.\n", lines_read_for_group, m_val);
+    }
+    else if (total_lines_read == 0 && group_count == 0) {
+        fprintf(stderr, "Warning: Input file was empty or contained no processable lines.\n");
+    }
+
+
+    free(input_values);
+    free(processing_buffer);
+    fclose(infile_ptr);
+    if (outfile_ptr != stdout) {
+        fclose(outfile_ptr);
+    }
+
+    return 0;
+}

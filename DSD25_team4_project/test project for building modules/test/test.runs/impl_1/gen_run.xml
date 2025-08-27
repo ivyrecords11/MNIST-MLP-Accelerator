@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1748971282">
+  <File Type="REPORTS-TCL" Name="glbl_ctrl_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="loc_ctrl1_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="glbl_ctrl.mmi"/>
+  <File Type="OPT-DRC" Name="loc_ctrl1_drc_opted.rpt"/>
+  <File Type="BG-DRC" Name="glbl_ctrl.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="loc_ctrl1_route_status.pb"/>
+  <File Type="BG-BGN" Name="glbl_ctrl.bgn"/>
+  <File Type="PLACE-UTIL" Name="loc_ctrl1_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="loc_ctrl1_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="loc_ctrl1_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="glbl_ctrl.bin"/>
+  <File Type="PLACE-CTRL" Name="loc_ctrl1_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="loc_ctrl1_power_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="glbl_ctrl_routed.dcp"/>
+  <File Type="BITSTR-MSK" Name="glbl_ctrl.msk"/>
+  <File Type="BITSTR-RBT" Name="glbl_ctrl.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="loc_ctrl1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="loc_ctrl1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="loc_ctrl1_route_status.rpt"/>
+  <File Type="PA-TCL" Name="glbl_ctrl.tcl"/>
+  <File Type="ROUTE-PWR" Name="loc_ctrl1_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="loc_ctrl1_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="loc_ctrl1_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="loc_ctrl1_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="glbl_ctrl.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="loc_ctrl1_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="loc_ctrl1_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="glbl_ctrl.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="loc_ctrl1_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="loc_ctrl1_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="glbl_ctrl.vdi"/>
+  <File Type="ROUTE-CLK" Name="loc_ctrl1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="loc_ctrl1_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="loc_ctrl1_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="loc_ctrl1_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="loc_ctrl1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="loc_ctrl1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="loc_ctrl1_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="loc_ctrl1_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="loc_ctrl1_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="glbl_ctrl.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="loc_ctrl1_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-NKY" Name="glbl_ctrl.nky"/>
+  <File Type="BITSTR-BMM" Name="glbl_ctrl_bd.bmm"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="glbl_ctrl.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="glbl_ctrl_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="glbl_ctrl_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="glbl_ctrl_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="glbl_ctrl_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="glbl_ctrl_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="glbl_ctrl_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="glbl_ctrl_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="glbl_ctrl_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="glbl_ctrl_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="glbl_ctrl_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="glbl_ctrl_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="glbl_ctrl.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="glbl_ctrl_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="glbl_ctrl_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="glbl_ctrl.rcfi"/>
+  <File Type="CFI_FILE" Name="glbl_ctrl.cfi"/>
+  <File Type="RNPI_FILE" Name="glbl_ctrl.rnpi"/>
+  <File Type="NPI_FILE" Name="glbl_ctrl.npi"/>
+  <File Type="RBD_FILE" Name="glbl_ctrl.rbd"/>
+  <File Type="ROUTE-RQS" Name="glbl_ctrl_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="glbl_ctrl_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/glbl_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/loc_ctrl1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clip.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/slice.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gemv_adder_tree.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gemv_adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pass_through_branch.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uni_adder_tree.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sim_1/new/tb_gemv_adder_tree.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder_tree.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../문서/3-1 과제/DSD/23101483_이가연_HW1/new/MAC.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../문서/3-1 과제/DSD/23101483_이가연_HW1/new/pipelined_adder_tree.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../문서/3-1 과제/DSD/23101483_이가연_HW1/new/single_port_bram.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pu_for_test.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Vivado/HW4/HW4.srcs/sources_1/new/streamline_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PU_L1.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/local_controller_1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vivado/HW4/HW4.srcs/sources_1/new/local_controller_1.v"/>
+        <Attr Name="ImportTime" Val="1746367062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/loc_ctrl2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/relu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gemv_mac.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/loc_ctrl4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/loc_ctrl3.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="glbl_ctrl"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ZYBO-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ZYBO-Z7-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/adder_tree.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

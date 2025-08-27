@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun 15 16:37:09 2025
+# Process ID         : 20504
+# Current directory  : C:/Users/ivyre/OneDrive/Desktop/test
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5884 C:\Users\ivyre\OneDrive\Desktop\test\test.xpr
+# Log file           : C:/Users/ivyre/OneDrive/Desktop/test/vivado.log
+# Journal file       : C:/Users/ivyre/OneDrive/Desktop/test\vivado.jou
+# Running On         : IVYLIB
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33835 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 60678 MB
+# Available Virtual  : 24927 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ivyre/OneDrive/Desktop/test/test.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg
+source tb_loc_ctrl1.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top loc_ctrl2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg
+source tb_loc_ctrl1.tcl
+run 32 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top streamline_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim

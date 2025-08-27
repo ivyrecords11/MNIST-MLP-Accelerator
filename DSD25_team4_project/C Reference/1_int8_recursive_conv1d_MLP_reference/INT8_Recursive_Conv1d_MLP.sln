@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INT8_Recursive_Conv1d_MLP", "INT8_Recursive_Conv1d_MLP\INT8_Recursive_Conv1d_MLP.vcxproj", "{5C471267-AE80-4731-9E50-56B3BE917D66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Debug|x64.ActiveCfg = Debug|x64
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Debug|x64.Build.0 = Debug|x64
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Debug|x86.Build.0 = Debug|Win32
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Release|x64.ActiveCfg = Release|x64
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Release|x64.Build.0 = Release|x64
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Release|x86.ActiveCfg = Release|Win32
+		{5C471267-AE80-4731-9E50-56B3BE917D66}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A934A6B-AB1F-42C2-AB50-A479D3F2232E}
+	EndGlobalSection
+EndGlobal

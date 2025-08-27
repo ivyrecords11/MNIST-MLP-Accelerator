@@ -1,0 +1,6 @@
+﻿  INT8_Recursive_Conv1d_MLP.cpp
+C:\Users\ksgtt\Downloads\C_code_reference_for_MLP_INT8_250507update\INT8_Recursive_Conv1d_MLP\INT8_Recursive_Conv1d_MLP.cpp(115,56): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ksgtt\Downloads\C_code_reference_for_MLP_INT8_250507update\INT8_Recursive_Conv1d_MLP\INT8_Recursive_Conv1d_MLP.cpp(154,58): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ksgtt\Downloads\C_code_reference_for_MLP_INT8_250507update\INT8_Recursive_Conv1d_MLP\INT8_Recursive_Conv1d_MLP.cpp(194,58): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ksgtt\Downloads\C_code_reference_for_MLP_INT8_250507update\INT8_Recursive_Conv1d_MLP\INT8_Recursive_Conv1d_MLP.cpp(234,58): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  INT8_Recursive_Conv1d_MLP.vcxproj -> C:\Users\ksgtt\Downloads\C_code_reference_for_MLP_INT8_250507update\x64\Debug\INT8_Recursive_Conv1d_MLP.exe

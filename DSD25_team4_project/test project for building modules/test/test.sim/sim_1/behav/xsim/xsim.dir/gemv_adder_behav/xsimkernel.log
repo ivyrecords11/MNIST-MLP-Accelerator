@@ -1,0 +1,7 @@
+Running: xsim.dir/gemv_adder_behav/xsimk.exe -simmode gui -wdb gemv_adder_behav.wdb -simrunnum 0 -socket 57076
+Design successfully loaded
+Design Loading Memory Usage: 28636 KB (Peak: 28636 KB)
+Design Loading CPU Usage: 421 ms
+Simulation completed
+Simulation Memory Usage: 29744 KB (Peak: 29744 KB)
+Simulation CPU Usage: 467 ms

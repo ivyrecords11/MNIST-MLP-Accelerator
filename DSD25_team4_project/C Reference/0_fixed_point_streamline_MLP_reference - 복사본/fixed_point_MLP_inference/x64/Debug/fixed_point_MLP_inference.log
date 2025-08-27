@@ -1,0 +1,10 @@
+﻿  fixed_point_MLP_inference.cpp
+C:\Users\ivyre\OneDrive\Desktop\DSD25_Termproject_Materials\01_Reference_SW\0_fixed_point_streamline_MLP_reference - 복사본\fixed_point_MLP_inference\fixed_point_MLP_inference.cpp(125,20): warning C4477: 'printf' : 서식 문자열 '%8x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 'int64_t'입니다.
+      C:\Users\ivyre\OneDrive\Desktop\DSD25_Termproject_Materials\01_Reference_SW\0_fixed_point_streamline_MLP_reference - 복사본\fixed_point_MLP_inference\fixed_point_MLP_inference.cpp(125,20):
+      서식 문자열에서 '%llx'을(를) 사용하는 것이 좋습니다.
+      C:\Users\ivyre\OneDrive\Desktop\DSD25_Termproject_Materials\01_Reference_SW\0_fixed_point_streamline_MLP_reference - 복사본\fixed_point_MLP_inference\fixed_point_MLP_inference.cpp(125,20):
+      서식 문자열에서 '%Ix'을(를) 사용하는 것이 좋습니다.
+      C:\Users\ivyre\OneDrive\Desktop\DSD25_Termproject_Materials\01_Reference_SW\0_fixed_point_streamline_MLP_reference - 복사본\fixed_point_MLP_inference\fixed_point_MLP_inference.cpp(125,20):
+      서식 문자열에서 '%I64x'을(를) 사용하는 것이 좋습니다.
+  
+  fixed_point_MLP_inference.vcxproj -> C:\Users\ivyre\OneDrive\Desktop\DSD25_Termproject_Materials\01_Reference_SW\0_fixed_point_streamline_MLP_reference - 복사본\x64\Debug\fixed_point_MLP_inference.exe

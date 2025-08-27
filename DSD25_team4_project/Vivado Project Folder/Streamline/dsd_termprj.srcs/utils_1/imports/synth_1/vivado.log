@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jun  6 13:54:00 2025
+# Process ID         : 47544
+# Current directory  : C:/Users/ivyre/OneDrive/Desktop/00_RTL_Skeleton/dsd_termprj.srcs/utils_1/imports/synth_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14564 C:\Users\ivyre\OneDrive\Desktop\00_RTL_Skeleton\dsd_termprj.srcs\utils_1\imports\synth_1\design_1_wrapper.dcp
+# Log file           : C:/Users/ivyre/OneDrive/Desktop/00_RTL_Skeleton/dsd_termprj.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file       : C:/Users/ivyre/OneDrive/Desktop/00_RTL_Skeleton/dsd_termprj.srcs/utils_1/imports/synth_1\vivado.jou
+# Running On         : IVYLIB
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33835 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 55309 MB
+# Available Virtual  : 23161 MB
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Users/ivyre/OneDrive/Desktop/00_RTL_Skeleton/dsd_termprj.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+Command: open_checkpoint C:/Users/ivyre/OneDrive/Desktop/00_RTL_Skeleton/dsd_termprj.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1133.691 ; gain = 6.285
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1505.809 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1602.969 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_axi_bram_ctrl_0_0' instantiated as 'design_1_i/axi_bram_ctrl_0' [c:/Users/junoh/vivado23/DSD25_Termprj/00_RTL_Skeleton/dsd_termprj.gen/sources_1/bd/design_1/synth/design_1.v:179]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_blk_mem_gen_0_0' instantiated as 'design_1_i/blk_mem_gen_0' [c:/Users/junoh/vivado23/DSD25_Termprj/00_RTL_Skeleton/dsd_termprj.gen/sources_1/bd/design_1/synth/design_1.v:220]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_processing_system7_0_0' instantiated as 'design_1_i/processing_system7_0' [c:/Users/junoh/vivado23/DSD25_Termprj/00_RTL_Skeleton/dsd_termprj.gen/sources_1/bd/design_1/synth/design_1.v:236]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_smartconnect_0_0' instantiated as 'design_1_i/smartconnect_0' [c:/Users/junoh/vivado23/DSD25_Termprj/00_RTL_Skeleton/dsd_termprj.gen/sources_1/bd/design_1/synth/design_1.v:298]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_top_mlp_0_0' instantiated as 'design_1_i/top_mlp_0' [c:/Users/junoh/vivado23/DSD25_Termprj/00_RTL_Skeleton/dsd_termprj.gen/sources_1/bd/design_1/synth/design_1.v:370]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1628.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1 (64-bit) build 3865809
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1941.375 ; gain = 842.711
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  6 13:54:28 2025...

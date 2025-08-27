@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_gemv_adder_tree.v,1749972430,verilog,,,,tb_gemv_adder_tree,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v,1749973623,verilog,,,,tb_loc_ctrl1,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/imports/new/gemv_adder_tree_final_final.v,1749950730,verilog,,C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_gemv_adder_tree.v,,gemv_adder_tree,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/gemv_adder.v,1748354966,verilog,,,,gemv_adder,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl1.v,1749040338,verilog,,C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v,,loc_ctrl1,,,,,,,,
+C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl2.v,1749040329,verilog,,C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v,,loc_ctrl2,,,,,,,,
+C:/Users/ivyre/OneDrive/문서/3-1 과제/DSD/23101483_이가연_HW1/new/MAC.v,1743422990,verilog,,,,MAC,,,,,,,,

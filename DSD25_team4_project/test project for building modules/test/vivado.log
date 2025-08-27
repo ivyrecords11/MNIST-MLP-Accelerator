@@ -1,0 +1,766 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun 15 16:37:09 2025
+# Process ID         : 20504
+# Current directory  : C:/Users/ivyre/OneDrive/Desktop/test
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5884 C:\Users\ivyre\OneDrive\Desktop\test\test.xpr
+# Log file           : C:/Users/ivyre/OneDrive/Desktop/test/vivado.log
+# Journal file       : C:/Users/ivyre/OneDrive/Desktop/test\vivado.jou
+# Running On         : IVYLIB
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33835 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 60678 MB
+# Available Virtual  : 24927 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ivyre/OneDrive/Desktop/test/test.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ivyre/OneDrive/Desktop/test/test.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_loc_ctrl1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'x_addr' [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 9 for port 'w_addr' [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:27]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 9 for port 'save_addr' [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.loc_ctrl1
+Compiling module xil_defaultlib.tb_loc_ctrl1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_loc_ctrl1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_loc_ctrl1_behav -key {Behavioral:sim_1:Functional:tb_loc_ctrl1} -tclbatch {tb_loc_ctrl1.tcl} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg
+WARNING: Simulation object /gemv_adder/clk_i was not found in the design.
+WARNING: Simulation object /gemv_adder/clear_i was not found in the design.
+WARNING: Simulation object /gemv_adder/x_i was not found in the design.
+WARNING: Simulation object /gemv_adder/w_i was not found in the design.
+WARNING: Simulation object /gemv_adder/sum_o was not found in the design.
+WARNING: Simulation object /gemv_adder/stage was not found in the design.
+WARNING: Simulation object /gemv_adder/stage_r was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[0].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[0].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[1].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[1].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[2].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[2].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[3].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[3].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[4].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[4].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[5].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[5].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[6].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[6].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[7].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[7].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[8].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[8].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[9].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[9].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[10].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[10].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[11].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[11].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[12].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[12].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[13].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[13].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[14].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[14].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[15].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[15].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[16].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[16].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[17].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[17].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[18].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[18].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[19].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[19].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[20].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[20].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[21].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[21].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[22].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[22].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[23].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[23].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[24].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[24].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[25].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[25].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[26].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[26].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[27].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[27].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[28].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[28].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[29].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[29].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[30].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[30].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[31].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[31].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[4].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[5].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[6].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[7].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[8].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[9].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[10].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[11].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[12].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[13].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[14].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[15].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[4].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[5].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[6].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[7].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[3].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[3].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[4].GEN_NODE[0].add_res  was not found in the design.
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg
+WARNING: Simulation object /tb_slice/a was not found in the design.
+WARNING: Simulation object /tb_slice/b was not found in the design.
+WARNING: Simulation object /tb_slice/a was not found in the design.
+WARNING: Simulation object /tb_slice/b was not found in the design.
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg
+WARNING: Simulation object /tb_glbl_ctrl/start was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/clear was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/clk was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/rstn was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/global_start was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/global_done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/done_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/start_o was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/clear_o was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/img_cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/x_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/save_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/save_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/x_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/cnt was not found in the design.
+source tb_loc_ctrl1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_loc_ctrl1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.344 ; gain = 17.012
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_loc_ctrl1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.loc_ctrl1
+Compiling module xil_defaultlib.tb_loc_ctrl1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_loc_ctrl1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 9 for port 'w_addr' [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 9 for port 'save_addr' [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.loc_ctrl1
+Compiling module xil_defaultlib.tb_loc_ctrl1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_loc_ctrl1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.loc_ctrl1
+Compiling module xil_defaultlib.tb_loc_ctrl1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_loc_ctrl1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2387.109 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+set_property top loc_ctrl2 [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_loc_ctrl1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'x_addr' on this module [C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_loc_ctrl1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_loc_ctrl1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_loc_ctrl1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sources_1/new/loc_ctrl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_ctrl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_loc_ctrl1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_loc_ctrl1_behav xil_defaultlib.tb_loc_ctrl1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.loc_ctrl2
+Compiling module xil_defaultlib.tb_loc_ctrl1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_loc_ctrl1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ivyre/OneDrive/Desktop/test/test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_loc_ctrl1_behav -key {Behavioral:sim_1:Functional:tb_loc_ctrl1} -tclbatch {tb_loc_ctrl1.tcl} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg} -view {C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_gemv_adder_tree_behav.wcfg
+WARNING: Simulation object /gemv_adder/clk_i was not found in the design.
+WARNING: Simulation object /gemv_adder/clear_i was not found in the design.
+WARNING: Simulation object /gemv_adder/x_i was not found in the design.
+WARNING: Simulation object /gemv_adder/w_i was not found in the design.
+WARNING: Simulation object /gemv_adder/sum_o was not found in the design.
+WARNING: Simulation object /gemv_adder/stage was not found in the design.
+WARNING: Simulation object /gemv_adder/stage_r was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[0].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[0].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[1].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[1].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[2].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[2].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[3].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[3].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[4].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[4].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[5].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[5].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[6].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[6].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[7].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[7].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[8].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[8].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[9].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[9].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[10].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[10].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[11].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[11].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[12].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[12].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[13].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[13].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[14].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[14].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[15].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[15].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[16].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[16].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[17].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[17].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[18].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[18].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[19].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[19].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[20].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[20].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[21].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[21].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[22].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[22].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[23].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[23].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[24].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[24].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[25].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[25].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[26].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[26].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[27].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[27].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[28].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[28].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[29].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[29].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[30].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[30].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[31].x_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_MUL[31].w_seg  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[4].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[5].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[6].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[7].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[8].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[9].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[10].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[11].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[12].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[13].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[14].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[0].GEN_NODE[15].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[4].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[5].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[6].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[1].GEN_NODE[7].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[2].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[2].GEN_NODE[3].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[3].GEN_NODE[0].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[3].GEN_NODE[1].add_res  was not found in the design.
+WARNING: Simulation object /gemv_adder/\GEN_LEVEL[4].GEN_NODE[0].add_res  was not found in the design.
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_slice_behav.wcfg
+WARNING: Simulation object /tb_slice/a was not found in the design.
+WARNING: Simulation object /tb_slice/b was not found in the design.
+WARNING: Simulation object /tb_slice/a was not found in the design.
+WARNING: Simulation object /tb_slice/b was not found in the design.
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_clip_behav.wcfg
+WARNING: Simulation object /tb_loc_ctrl1/x_addr was not found in the design.
+WARNING: Simulation object /tb_loc_ctrl1/DUT/x_addr was not found in the design.
+open_wave_config C:/Users/ivyre/OneDrive/Desktop/test/tb_glbl_ctrl_behav.wcfg
+WARNING: Simulation object /tb_glbl_ctrl/start was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/clear was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/clk was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/rstn was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/global_start was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/global_done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/done_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/start_o was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/clear_o was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/DUT/img_cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/x_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/save_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl1/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/save_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl2/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl3/cnt was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/clk_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/clear_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/start_i was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/x_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/x_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/w_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/w_addr was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/save_en was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/done was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/present_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/next_state was not found in the design.
+WARNING: Simulation object /tb_glbl_ctrl/ctrl4/cnt was not found in the design.
+source tb_loc_ctrl1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_loc_ctrl1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2387.109 ; gain = 0.000
+run 32 us
+$stop called at time : 5050 ns : File "C:/Users/ivyre/OneDrive/Desktop/test/test.srcs/sim_1/new/tb_loc_ctrl1.v" Line 21
+set_property top streamline_top [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sources_1\new\loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\ivyre\OneDrive\Desktop\test\test.srcs\sim_1\new\tb_loc_ctrl1.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 15 23:39:13 2025...
